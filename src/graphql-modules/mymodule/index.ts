@@ -23,9 +23,13 @@ const resolvers: Resolvers = {
   }
 };
 
+// const modulekey1 = 'xxx';
+// const modulekey2 = 'yyy';
+
 const myModule = new GraphQLModule({
   typeDefs,
   resolvers,
   providers: [MyProvider]
+  // context: ({req}) => ({modulekey1, modulekey2})
 });
 export default myModule;

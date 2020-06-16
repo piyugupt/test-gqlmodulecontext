@@ -6,7 +6,8 @@ export class BaseRESTDataSource extends RESTDataSource {
   }
 
   willSendRequest(request: RequestOptions): void {
-    // This returns empty
+    // This returns empty and does not contain the customkey1 / customkey2 
+    // values initialized in Apollo Server
     console.log('Context = ' + JSON.stringify(this.context));    
   }
 }
